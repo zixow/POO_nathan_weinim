@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         body: const Center(
             child: Text("Bienvenue sur l'application bozo",
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 19,
               ),
             )
         ),
