@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Hotel.dart';
 import 'Commentaires.dart';
+import 'login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,12 +46,24 @@ class _NavigationState extends State<Navigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Barre du haut
+      // Barre du haut avec le bouton login
       appBar: AppBar(
         title: const Text('Office du Tourisme'),
         centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.person),
+            tooltip: 'Connexion',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const PageLogin()),
+              );
+            },
+          ),
+        ],
       ),
 
       // La page affichée change selon l'onglet
