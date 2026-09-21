@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 
-void acceuil() {
-  runApp(const MyApp());
+class Accueil extends StatelessWidget {
+  const Accueil({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Accueil'),
+      ),
+      body: const Center(
+        child: Text(
+          'Bienvenue !',
+          style: TextStyle(fontSize: 24),
+        ),
+      ),
+    );
+  }
 }
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
