@@ -99,7 +99,7 @@ class _NavigationState extends State<Navigation> {
   }
 }
 
-// ---------- PAGE ACCUEIL (avec ta barre de recherche) ----------
+// ---------- PAGE ACCUEIL ----------
 class PageAccueil extends StatelessWidget {
   const PageAccueil({super.key});
 
@@ -126,6 +126,7 @@ class PageAccueil extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
+          Image.asset("assets/images/image acceuil.png"),
           const Text(
             "Bienvenue sur l'application",
             style: TextStyle(fontSize: 20, color: Colors.white),
