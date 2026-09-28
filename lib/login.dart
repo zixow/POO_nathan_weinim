@@ -179,17 +179,6 @@ class _LoginPageState extends State<LoginPage> {
 
                   const SizedBox(height: 8),
 
-                  // Mot de passe oublié
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton(
-                      onPressed: () {
-                        // TODO: navigation vers la page "mot de passe oublié"
-                      },
-                      child: const Text('Mot de passe oublié ?'),
-                    ),
-                  ),
-
                   const SizedBox(height: 16),
 
                   // Bouton de connexion

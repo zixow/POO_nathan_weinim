@@ -133,7 +133,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                   TextFormField(
                     controller: _nameController,
                     decoration: const InputDecoration(
-                      labelText: 'Nom complet',
+                      labelText: 'Pseudo',
                       prefixIcon: Icon(Icons.person_outline),
                       border: OutlineInputBorder(),
                     ),

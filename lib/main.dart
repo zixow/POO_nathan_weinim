@@ -103,6 +103,8 @@ class _NavigationState extends State<Navigation> {
 class PageAccueil extends StatelessWidget {
   const PageAccueil({super.key});
 
+  get width => null;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -126,7 +128,11 @@ class PageAccueil extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
-          Image.asset("assets/images/image acceuil.png"),
+          Image.asset(
+              "assets/images/image acceuil.png",
+              width: double.infinity,
+              fit: BoxFit.cover
+          ),
           const Text(
             "Bienvenue sur l'application",
             style: TextStyle(fontSize: 20, color: Colors.white),
